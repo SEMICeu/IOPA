@@ -17,9 +17,10 @@
       "@id": "http://purl.org/dc/terms/type",
       "@type": "@id"
     },
-    "CAVAsset": "http://data.europa.eu/2sa/cav#Asset",
+    "BindingRequirement": "http://data.europa.eu/iopa/BindingRequirement",
     "Code": "http://www.w3.org/2004/02/skos/core#Concept",
     "Document": "http://xmlns.com/foaf/0.1/Document",
+    "Expression": "http://purl.org/vocab/frbr/core#Expression",
     "Identifier": "http://www.w3.org/ns/adms#Identifier",
     "Literal": "http://www.w3.org/2000/01/rdf-schema#Literal",
     "Location": "http://purl.org/dc/terms/Location",
@@ -47,7 +48,6 @@
     },
     "Text": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
     "URI": "http://www.w3.org/2001/XMLSchema#anyURI",
-    "Work": "http://purl.org/vocab/frbr/core#Work",
     "cav:assesses": {
       "@id": "http://data.europa.eu/2sa/cav#assesses",
       "@type": "@id"
@@ -55,11 +55,6 @@
     "cav:resultsIn": {
       "@container": "@set",
       "@id": "http://data.europa.eu/2sa/cav#resultsIn",
-      "@type": "@id"
-    },
-    "cv:constrains": {
-      "@container": "@set",
-      "@id": "http://data.europa.eu/m8g/constrains",
       "@type": "@id"
     },
     "cv:hasParticipant": {
@@ -128,6 +123,11 @@
     "interpretation": {
       "@container": "@set",
       "@id": "http://data.europa.eu/2sa/cav#interpretation",
+      "@type": "@id"
+    },
+    "iopa:affects": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/iopa/affects",
       "@type": "@id"
     },
     "judgement": {

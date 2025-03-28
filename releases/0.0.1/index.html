@@ -229,6 +229,7 @@ This specification uses the following prefixes to shorten the URIs for readibili
 		<tr><td><code>dct</code></td><td><code>http://purl.org/dc/terms/</code></td></tr>
 		<tr><td><code>foaf</code></td><td><code>http://xmlns.com/foaf/0.1/</code></td></tr>
 		<tr><td><code>frbr</code></td><td><code>http://purl.org/vocab/frbr/core#</code></td></tr>
+		<tr><td><code>iopa</code></td><td><code>http://data.europa.eu/iopa/</code></td></tr>
 		<tr><td><code>rdf</code></td><td><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></td></tr>
 		<tr><td><code>rdfs</code></td><td><code>http://www.w3.org/2000/01/rdf-schema#</code></td></tr>
 		<tr><td><code>skos</code></td><td><code>http://www.w3.org/2004/02/skos/core#</code></td></tr>
@@ -252,7 +253,7 @@ This specification uses the following prefixes to shorten the URIs for readibili
                             <br />
                             |
 			      <a href="#Assessment">Assessment</a> |
-			      <a href="#CAVAsset">CAV Asset</a> |
+			      <a href="#BindingRequirement">Binding Requirement</a> |
 			      <a href="#Statement">Statement</a> |
                         </p>
                         <p>
@@ -262,13 +263,13 @@ This specification uses the following prefixes to shorten the URIs for readibili
 			      <a href="#ADMSAsset">ADMS Asset</a> |
 			      <a href="#Agent">Agent</a> |
 			      <a href="#Document">Document</a> |
+			      <a href="#Expression">Expression</a> |
 			      <a href="#Identifier">Identifier</a> |
 			      <a href="#Location">Location</a> |
 			      <a href="#Participation">Participation</a> |
 			      <a href="#PublicOrganisation">Public Organisation</a> |
 			      <a href="#PublicService">Public Service</a> |
 			      <a href="#Resource">Resource</a> |
-			      <a href="#Work">Work</a> |
                         </p>
                 
                 
@@ -404,7 +405,7 @@ given scenario.
                                 <td>
                                     
                                         
-                                            <a href="#CAVAsset" data-placement="right">CAV Asset</a>
+                                            <a href="#BindingRequirement" data-placement="right">Binding Requirement</a>
                                         
                                     
                                 </td>
@@ -529,16 +530,16 @@ given scenario.
 
    
         <section>
-            <h3 id="CAVAsset">
-                <a href="http://data.europa.eu/2sa/cav#Asset"
+            <h3 id="BindingRequirement">
+                <a href="http://data.europa.eu/iopa/BindingRequirement"
                    data-toggle="tooltip"
-                   data-content="http://data.europa.eu/2sa/cav#Asset"
-                   data-placement="right">CAV Asset</a>
+                   data-content="http://data.europa.eu/iopa/BindingRequirement"
+                   data-placement="right">Binding Requirement</a>
 
             </h3>
 	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
 		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20CavAsset&body=Explain%20your%20issue"}}>
+                <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20BindingRequirement&body=Explain%20your%20issue"}}>
                    <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
 		</a>
 		-->
@@ -547,7 +548,7 @@ given scenario.
                     Definition
                 </dt>
                 <dd>
-                    A resource, probably resulting from a work, with purpose and value.
+                    An obligation, prohibition, condition, criterion or limit of a legal, organisational, semantic or technical nature, which is set by a Union entity or a public sector body concerning one or more trans-European digital public services and which has an effect on cross-border interoperability.
                 </dd>
                 
                 
@@ -564,14 +565,14 @@ given scenario.
                     </dt>
                     
                         <dd>
-                            For this entity the following properties are defined: <a href="#CAVAsset.constrains">constrains</a>
-                            , <a href="#CAVAsset.documentedin">documented in</a>
-                            , <a href="#CAVAsset.hasparticipation">has participation</a>
-                            , <a href="#CAVAsset.ispartof">is part of</a>
-                            , <a href="#CAVAsset.page">page</a>
-                            , <a href="#CAVAsset.references">references</a>
-                            , <a href="#CAVAsset.relation">relation</a>
-                            , <a href="#CAVAsset.valuedescription">value description</a>
+                            For this entity the following properties are defined: <a href="#BindingRequirement.affects">affects</a>
+                            , <a href="#BindingRequirement.documentedin">documented in</a>
+                            , <a href="#BindingRequirement.hasparticipation">has participation</a>
+                            , <a href="#BindingRequirement.ispartof">is part of</a>
+                            , <a href="#BindingRequirement.page">page</a>
+                            , <a href="#BindingRequirement.references">references</a>
+                            , <a href="#BindingRequirement.relation">relation</a>
+                            , <a href="#BindingRequirement.valuedescription">value description</a>
                             .
                     </dd>
                 
@@ -611,22 +612,22 @@ given scenario.
                     </thead>
                     <tbody class="supertype">
                         
-                            <tr id="CAVAsset.constrains"
+                            <tr id="BindingRequirement.affects"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/m8g/constrains"
+                                resource="http://data.europa.eu/iopa/affects"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20constrains%20in%20CAV Asset&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23CAVAsset.constrains" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20affects%20in%20Binding Requirement&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23BindingRequirement.affects" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
                                 <td>
-                                        <a href="http://data.europa.eu/m8g/constrains"
+                                        <a href="http://data.europa.eu/iopa/affects"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/m8g/constrains"
+                                           data-content="http://data.europa.eu/iopa/affects"
                                            data-placement="right">
-                                        constrains</a>
+                                        affects</a>
                                 </td>
                                 <td>
                                     
@@ -639,10 +640,10 @@ given scenario.
                                     1..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    Information Concept about which a Constraint expresses a limitation.
+                                    The Public Service affected by the Binding Requirement
                                 </td>
                                 <td property="skos:scopeNote">
-                                    This relation points towards the Public Service to which the new binding requirements apply.
+                                    
                                 </td>
 				<!--
                                 <td>
@@ -655,12 +656,12 @@ given scenario.
 				-->
                             </tr>
                         
-                            <tr id="CAVAsset.documentedin"
+                            <tr id="BindingRequirement.documentedin"
                                 typeof="rdfs:Property"
                                 resource="http://data.europa.eu/2sa/cav#documentedIn"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20documented in%20in%20CAV Asset&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23CAVAsset.documentedin" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20documented in%20in%20Binding Requirement&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23BindingRequirement.documentedin" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -700,12 +701,12 @@ other related relevant details.
 				-->
                             </tr>
                         
-                            <tr id="CAVAsset.hasparticipation"
+                            <tr id="BindingRequirement.hasparticipation"
                                 typeof="rdfs:Property"
                                 resource="http://data.europa.eu/m8g/hasParticipation"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20has participation%20in%20CAV Asset&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23CAVAsset.hasparticipation" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20has participation%20in%20Binding Requirement&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23BindingRequirement.hasparticipation" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -744,12 +745,12 @@ other related relevant details.
 				-->
                             </tr>
                         
-                            <tr id="CAVAsset.ispartof"
+                            <tr id="BindingRequirement.ispartof"
                                 typeof="rdfs:Property"
                                 resource="http://purl.org/dc/terms/isPartOf"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20is part of%20in%20CAV Asset&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23CAVAsset.ispartof" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20is part of%20in%20Binding Requirement&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23BindingRequirement.ispartof" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -764,7 +765,7 @@ other related relevant details.
                                 <td>
                                     
                                         
-                                            <a href="#Work" data-placement="right">Work</a>
+                                            <a href="#Expression" data-placement="right">Expression</a>
                                         
                                     
                                 </td>
@@ -788,12 +789,12 @@ other related relevant details.
 				-->
                             </tr>
                         
-                            <tr id="CAVAsset.page"
+                            <tr id="BindingRequirement.page"
                                 typeof="rdfs:Property"
                                 resource="http://xmlns.com/foaf/0.1/page"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20page%20in%20CAV Asset&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23CAVAsset.page" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20page%20in%20Binding Requirement&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23BindingRequirement.page" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -832,12 +833,12 @@ other related relevant details.
 				-->
                             </tr>
                         
-                            <tr id="CAVAsset.references"
+                            <tr id="BindingRequirement.references"
                                 typeof="rdfs:Property"
                                 resource="http://purl.org/dc/terms/references"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20references%20in%20CAV Asset&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23CAVAsset.references" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20references%20in%20Binding Requirement&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23BindingRequirement.references" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -876,12 +877,12 @@ other related relevant details.
 				-->
                             </tr>
                         
-                            <tr id="CAVAsset.relation"
+                            <tr id="BindingRequirement.relation"
                                 typeof="rdfs:Property"
                                 resource="http://purl.org/dc/terms/relation"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20relation%20in%20CAV Asset&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23CAVAsset.relation" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20relation%20in%20Binding Requirement&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23BindingRequirement.relation" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -920,12 +921,12 @@ other related relevant details.
 				-->
                             </tr>
                         
-                            <tr id="CAVAsset.valuedescription"
+                            <tr id="BindingRequirement.valuedescription"
                                 typeof="rdfs:Property"
                                 resource="http://data.europa.eu/2sa/cav#valueDescription"
                                 class="class mandatory">
                                 <td>
-				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20value description%20in%20CAV Asset&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23CAVAsset.valuedescription" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20value description%20in%20Binding Requirement&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23BindingRequirement.valuedescription" target="_blank" rel="noopener noreferrer" >
 					    <!--                                        <i class="icon">[o]</i> -->
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
@@ -970,6 +971,8 @@ other related relevant details.
         
     </div>
 </section>
+
+
 
 
 
@@ -1296,8 +1299,6 @@ other related relevant details.
         
     </div>
 </section>
-
-
 
 
 
@@ -1842,6 +1843,228 @@ They are included in the Application Profile because they form the range of prop
                 
             </dl>
         </div>
+        
+    </div>
+</section>
+
+
+
+
+
+   
+        <section>
+            <h3 id="Expression">
+                <a href="http://purl.org/vocab/frbr/core#Expression"
+                   data-toggle="tooltip"
+                   data-content="http://purl.org/vocab/frbr/core#Expression"
+                   data-placement="right">Expression</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20Expression&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A realization of a single work usually in a physical form.
+                </dd>
+                
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                        This class describes the context under which the binding requirements came about.
+                    </dd>
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#Expression.description">description</a>
+                            , <a href="#Expression.documentedin">documented in</a>
+                            , <a href="#Expression.name">name</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="Expression.description"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/description"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20description%20in%20Expression&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23Expression.description" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/description"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/description"
+                                           data-placement="right">
+                                        description</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A free text Description of the resource.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				
+                                <td>
+                                    
+                                </td>
+				-->
+                            </tr>
+                        
+                            <tr id="Expression.documentedin"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/2sa/cav#documentedIn"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20documented in%20in%20Expression&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23Expression.documentedin" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://data.europa.eu/2sa/cav#documentedIn"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/2sa/cav#documentedIn"
+                                           data-placement="right">
+                                        documented in</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#URI" data-placement="right">URI</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A link to any information supporting the value of the work and any other related relevant details.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				
+                                <td>
+                                    
+                                </td>
+				-->
+                            </tr>
+                        
+                            <tr id="Expression.name"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/title"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20name%20in%20Expression&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23Expression.name" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/title"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/title"
+                                           data-placement="right">
+                                        name</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A name given to the resource.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				
+                                <td>
+                                    
+                                </td>
+				-->
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
         
     </div>
 </section>
@@ -2960,228 +3183,6 @@ They are included in the Application Profile because they form the range of prop
 
 
 
-   
-        <section>
-            <h3 id="Work">
-                <a href="http://purl.org/vocab/frbr/core#Work"
-                   data-toggle="tooltip"
-                   data-content="http://purl.org/vocab/frbr/core#Work"
-                   data-placement="right">Work</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20Work&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    An abstract notion of an artistic or intellectual creation.
-                </dd>
-                
-                
-                    <dt>
-                        Usage Note
-                    </dt>
-                    <dd>
-                        This class describes the context under which the binding requirements came about.
-                    </dd>
-                
-                
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                        <dd>
-                            For this entity the following properties are defined: <a href="#Work.description">description</a>
-                            , <a href="#Work.documentedin">documented in</a>
-                            , <a href="#Work.name">name</a>
-                            .
-                    </dd>
-                
-            </dl>
-        </div>
-        
-            <div class="u-table-overflow">
-                <table class="data-table simple" id="table-mandatory-classes">
-                    <thead>
-                        <tr class="data-table__header">
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                            </th>
-                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
-                                Property
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:14%">
-                                Range
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                                Card
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Definition 
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Usage
-                            </th>
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Codelist
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                                DCAT
-                            </th>
-			    -->
-                        </tr>
-                    </thead>
-                    <tbody class="supertype">
-                        
-                            <tr id="Work.description"
-                                typeof="rdfs:Property"
-                                resource="http://purl.org/dc/terms/description"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20description%20in%20Work&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23Work.description" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://purl.org/dc/terms/description"
-                                           data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/description"
-                                           data-placement="right">
-                                        description</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    1..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A free text Description of the resource.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				
-                                <td>
-                                    
-                                </td>
-				-->
-                            </tr>
-                        
-                            <tr id="Work.documentedin"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2sa/cav#documentedIn"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20documented in%20in%20Work&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23Work.documentedin" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://data.europa.eu/2sa/cav#documentedIn"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2sa/cav#documentedIn"
-                                           data-placement="right">
-                                        documented in</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#URI" data-placement="right">URI</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A link to any information supporting the value of the work and any other related relevant details.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				
-                                <td>
-                                    
-                                </td>
-				-->
-                            </tr>
-                        
-                            <tr id="Work.name"
-                                typeof="rdfs:Property"
-                                resource="http://purl.org/dc/terms/title"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20name%20in%20Work&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23Work.name" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://purl.org/dc/terms/title"
-                                           data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/title"
-                                           data-placement="right">
-                                        name</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    1..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A name given to the resource.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				
-                                <td>
-                                    
-                                </td>
-				-->
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        
-    </div>
-</section>
-
-
-
-
-
 </section>
 
     <section>
@@ -3599,11 +3600,11 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 							<tr>
-								<td><a href="#CAVAsset">CAV Asset</a></td>
-								<td><div class="shorten">http://data.europa.eu/2sa/cav#Asset</div></td>
+								<td><a href="#BindingRequirement">Binding Requirement</a></td>
+								<td><div class="shorten">http://data.europa.eu/iopa/BindingRequirement</div></td>
 								<td>Mandatory</td>
-								<td><a href="#CAVAsset.constrains">constrains </a></td>
-								<td><div class="shorten">http://data.europa.eu/m8g/constrains</div></td>
+								<td><a href="#BindingRequirement.affects">affects </a></td>
+								<td><div class="shorten">http://data.europa.eu/iopa/affects</div></td>
 							</tr>
 						
 					
@@ -3613,10 +3614,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 							<tr>
-								<td><a href="#CAVAsset">CAV Asset</a></td>
-								<td><div class="shorten">http://data.europa.eu/2sa/cav#Asset</div></td>
+								<td><a href="#BindingRequirement">Binding Requirement</a></td>
+								<td><div class="shorten">http://data.europa.eu/iopa/BindingRequirement</div></td>
 								<td>Mandatory</td>
-								<td><a href="#CAVAsset.ispartof">is part of </a></td>
+								<td><a href="#BindingRequirement.ispartof">is part of </a></td>
 								<td><div class="shorten">http://purl.org/dc/terms/isPartOf</div></td>
 							</tr>
 						
@@ -3629,10 +3630,10 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 							<tr>
-								<td><a href="#CAVAsset">CAV Asset</a></td>
-								<td><div class="shorten">http://data.europa.eu/2sa/cav#Asset</div></td>
+								<td><a href="#BindingRequirement">Binding Requirement</a></td>
+								<td><div class="shorten">http://data.europa.eu/iopa/BindingRequirement</div></td>
 								<td>Mandatory</td>
-								<td><a href="#CAVAsset.valuedescription">value description </a></td>
+								<td><a href="#BindingRequirement.valuedescription">value description </a></td>
 								<td><div class="shorten">http://data.europa.eu/2sa/cav#valueDescription</div></td>
 							</tr>
 						
@@ -3659,20 +3660,20 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 							<tr>
-								<td><a href="#CAVAsset">CAV Asset</a></td>
-								<td><div class="shorten">http://data.europa.eu/2sa/cav#Asset</div></td>
+								<td><a href="#BindingRequirement">Binding Requirement</a></td>
+								<td><div class="shorten">http://data.europa.eu/iopa/BindingRequirement</div></td>
 								<td>Optional</td>
-								<td><a href="#CAVAsset.documentedin">documented in </a></td>
+								<td><a href="#BindingRequirement.documentedin">documented in </a></td>
 								<td><div class="shorten">http://data.europa.eu/2sa/cav#documentedIn</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#CAVAsset">CAV Asset</a></td>
-								<td><div class="shorten">http://data.europa.eu/2sa/cav#Asset</div></td>
+								<td><a href="#BindingRequirement">Binding Requirement</a></td>
+								<td><div class="shorten">http://data.europa.eu/iopa/BindingRequirement</div></td>
 								<td>Optional</td>
-								<td><a href="#CAVAsset.hasparticipation">has participation </a></td>
+								<td><a href="#BindingRequirement.hasparticipation">has participation </a></td>
 								<td><div class="shorten">http://data.europa.eu/m8g/hasParticipation</div></td>
 							</tr>
 						
@@ -3681,30 +3682,30 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 							<tr>
-								<td><a href="#CAVAsset">CAV Asset</a></td>
-								<td><div class="shorten">http://data.europa.eu/2sa/cav#Asset</div></td>
+								<td><a href="#BindingRequirement">Binding Requirement</a></td>
+								<td><div class="shorten">http://data.europa.eu/iopa/BindingRequirement</div></td>
 								<td>Optional</td>
-								<td><a href="#CAVAsset.page">page </a></td>
+								<td><a href="#BindingRequirement.page">page </a></td>
 								<td><div class="shorten">http://xmlns.com/foaf/0.1/page</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#CAVAsset">CAV Asset</a></td>
-								<td><div class="shorten">http://data.europa.eu/2sa/cav#Asset</div></td>
+								<td><a href="#BindingRequirement">Binding Requirement</a></td>
+								<td><div class="shorten">http://data.europa.eu/iopa/BindingRequirement</div></td>
 								<td>Optional</td>
-								<td><a href="#CAVAsset.references">references </a></td>
+								<td><a href="#BindingRequirement.references">references </a></td>
 								<td><div class="shorten">http://purl.org/dc/terms/references</div></td>
 							</tr>
 						
 					
 						
 							<tr>
-								<td><a href="#CAVAsset">CAV Asset</a></td>
-								<td><div class="shorten">http://data.europa.eu/2sa/cav#Asset</div></td>
+								<td><a href="#BindingRequirement">Binding Requirement</a></td>
+								<td><div class="shorten">http://data.europa.eu/iopa/BindingRequirement</div></td>
 								<td>Optional</td>
-								<td><a href="#CAVAsset.relation">relation </a></td>
+								<td><a href="#BindingRequirement.relation">relation </a></td>
 								<td><div class="shorten">http://purl.org/dc/terms/relation</div></td>
 							</tr>
 						
@@ -3722,6 +3723,55 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						<td></td>
 						<td></td>
 					</tr>
+				
+			</tr>
+		
+				
+					
+						
+							<tr>
+								<td><a href="#Expression">Expression</a></td>
+								<td><div class="shorten">http://purl.org/vocab/frbr/core#Expression</div></td>
+								<td>Mandatory</td>
+								<td><a href="#Expression.description">description </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/description</div></td>
+							</tr>
+						
+					
+						
+					
+						
+							<tr>
+								<td><a href="#Expression">Expression</a></td>
+								<td><div class="shorten">http://purl.org/vocab/frbr/core#Expression</div></td>
+								<td>Mandatory</td>
+								<td><a href="#Expression.name">name </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/title</div></td>
+							</tr>
+						
+					
+					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+							<tr>
+								<td><a href="#Expression">Expression</a></td>
+								<td><div class="shorten">http://purl.org/vocab/frbr/core#Expression</div></td>
+								<td>Optional</td>
+								<td><a href="#Expression.documentedin">documented in </a></td>
+								<td><div class="shorten">http://data.europa.eu/2sa/cav#documentedIn</div></td>
+							</tr>
+						
+					
+						
+					
 				
 			</tr>
 		
@@ -4044,55 +4094,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 				
 			</tr>
 		
-				
-					
-						
-							<tr>
-								<td><a href="#Work">Work</a></td>
-								<td><div class="shorten">http://purl.org/vocab/frbr/core#Work</div></td>
-								<td>Mandatory</td>
-								<td><a href="#Work.description">description </a></td>
-								<td><div class="shorten">http://purl.org/dc/terms/description</div></td>
-							</tr>
-						
-					
-						
-					
-						
-							<tr>
-								<td><a href="#Work">Work</a></td>
-								<td><div class="shorten">http://purl.org/vocab/frbr/core#Work</div></td>
-								<td>Mandatory</td>
-								<td><a href="#Work.name">name </a></td>
-								<td><div class="shorten">http://purl.org/dc/terms/title</div></td>
-							</tr>
-						
-					
-					
-						
-					
-						
-					
-						
-					
-					
-						
-					
-						
-							<tr>
-								<td><a href="#Work">Work</a></td>
-								<td><div class="shorten">http://purl.org/vocab/frbr/core#Work</div></td>
-								<td>Optional</td>
-								<td><a href="#Work.documentedin">documented in </a></td>
-								<td><div class="shorten">http://data.europa.eu/2sa/cav#documentedIn</div></td>
-							</tr>
-						
-					
-						
-					
-				
-			</tr>
-		
 	<tbody>
 </table>
 
@@ -4120,6 +4121,7 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 {'pref':'foaf:', 'ns': 'http://xmlns.com/foaf/0.1/'},
 {'pref':'frbr:', 'ns': 'http://purl.org/vocab/frbr/core#'},
 {'pref':'geo:', 'ns': 'http://www.opengis.net/ont/geosparql#'},
+{'pref':'iopa:', 'ns': 'http://data.europa.eu/iopa/'},
 {'pref':'legal:', 'ns': 'http://www.w3.org/ns/legal#'},
 {'pref':'locn:', 'ns': 'http://www.w3.org/ns/locn#'},
 {'pref':'odrl:', 'ns': 'http://www.w3.org/ns/odrl/2/'},
