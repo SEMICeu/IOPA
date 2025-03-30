@@ -1341,7 +1341,7 @@
       "sh:property": [
         {
           "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#AssetShape/30e78cd98aa6cd5dbc31678289abb5e0cc0b55c7",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#ADMSAsset.landingpage",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#Asset.landingpage",
           "sh:description": {
             "en": "A web page that provides access to the Dataset, its Distributions and/or additional information."
           },
@@ -1353,7 +1353,7 @@
         },
         {
           "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#AssetShape/322371a77364a50f049d46180f6192532eea26dc",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#ADMSAsset.type",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#Asset.type",
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
             "en": "The nature or genre of the resource."
@@ -1365,7 +1365,7 @@
         },
         {
           "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#AssetShape/488f0bcb1b2d7cb5288ca9952a7b94f106f95859",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#ADMSAsset.title",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#Asset.title",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
             "en": "\tA name given to the resource."
@@ -1377,7 +1377,7 @@
         },
         {
           "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#AssetShape/4f381639bb6e021939f65b4f41409d1edaeade9b",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#ADMSAsset.type",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#Asset.type",
           "sh:description": {
             "en": "The nature or genre of the resource."
           },
@@ -1389,7 +1389,7 @@
         },
         {
           "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#AssetShape/6c7c1bd2ab3b7761e5be759a078a9fd93f411a57",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#ADMSAsset.identifier",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#Asset.identifier",
           "sh:description": {
             "en": "Links a resource to an adms:Identifier class."
           },
@@ -1401,7 +1401,7 @@
         },
         {
           "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#AssetShape/6cae9880e515253132af1452a38a8a5827165149",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#ADMSAsset.description",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#Asset.description",
           "sh:description": {
             "en": "An account of the resource."
           },
@@ -1413,7 +1413,7 @@
         },
         {
           "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#AssetShape/74feba662f4f65577bf45a8dd94f8faec0f03592",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#ADMSAsset.type",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#Asset.type",
           "sh:description": {
             "en": "The nature or genre of the resource."
           },
@@ -1425,7 +1425,7 @@
         },
         {
           "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#AssetShape/768bb4171e00505886fe9a1e949b4cd71f0eb548",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#ADMSAsset.description",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#Asset.description",
           "sh:description": {
             "en": "An account of the resource."
           },
@@ -1437,7 +1437,7 @@
         },
         {
           "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#AssetShape/8f61614144aa7bca188b24f5976593dc08aad0e6",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#ADMSAsset.description",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#Asset.description",
           "sh:description": {
             "en": "An account of the resource."
           },
@@ -1449,7 +1449,7 @@
         },
         {
           "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#AssetShape/92d65d33f2a5d5345f1980ffd0cf304e47dd0caf",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#ADMSAsset.title",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#Asset.title",
           "sh:description": {
             "en": "\tA name given to the resource."
           },
@@ -1461,7 +1461,7 @@
         },
         {
           "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#AssetShape/aadbd67a77a624f073be2076627fb9dc883cbe48",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#ADMSAsset.identifier",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#Asset.identifier",
           "sh:description": {
             "en": "Links a resource to an adms:Identifier class."
           },
@@ -1473,7 +1473,7 @@
         },
         {
           "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#AssetShape/c0d17764e84e711728581fda7356a51e99a9040a",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#ADMSAsset.identifier",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#Asset.identifier",
           "sh:description": {
             "en": "Links a resource to an adms:Identifier class."
           },
@@ -1485,7 +1485,7 @@
         },
         {
           "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#AssetShape/d4d4f2399b8cf2f615ac658920373b714726bed0",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#ADMSAsset.description",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#Asset.description",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:description": {
             "en": "An account of the resource."
@@ -1497,7 +1497,7 @@
         },
         {
           "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#AssetShape/d5d74574f70f9a979535f3624608f88180dd0c97",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#ADMSAsset.title",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#Asset.title",
           "sh:description": {
             "en": "\tA name given to the resource."
           },
@@ -1509,7 +1509,7 @@
         },
         {
           "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#AssetShape/e2017f72421063cd9ff494011ec78f35f9632a4a",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#ADMSAsset.identifier",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#Asset.identifier",
           "sh:class": "http://www.w3.org/ns/adms#Identifier",
           "sh:description": {
             "en": "Links a resource to an adms:Identifier class."
@@ -1521,7 +1521,7 @@
         },
         {
           "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#AssetShape/f8b02efd063b8089b72ce9677a1e4a3488eeb9a9",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#ADMSAsset.title",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#Asset.title",
           "sh:description": {
             "en": "\tA name given to the resource."
           },
@@ -1533,7 +1533,7 @@
         },
         {
           "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#AssetShape/ffbbcd28b1fd92213d8350e1b6418d3d998c7197",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#ADMSAsset.landingpage",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#Asset.landingpage",
           "sh:class": "http://xmlns.com/foaf/0.1/Document",
           "sh:description": {
             "en": "A web page that provides access to the Dataset, its Distributions and/or additional information."

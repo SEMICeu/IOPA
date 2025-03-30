@@ -12,7 +12,7 @@
   <xs:element name="Literal" type="LiteralType"/>
   <xs:element name="Uri" type="UriType"/>
   <xs:element name="Code" type="CodeType"/>
-  <xs:element name="AdmsAsset" type="AdmsAssetType"/>
+  <xs:element name="Asset" type="AssetType"/>
   <xs:element name="Identifier" type="IdentifierType"/>
   <xs:element name="Resource" type="ResourceType"/>
   <xs:element name="Agent" type="AgentType"/>
@@ -110,7 +110,7 @@
           <xs:documentation xml:lang="en">A related resource that is referenced, cited, or otherwise pointed to by the described resource.</xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="relation" ref="AdmsAssetType" maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="relation" ref="AssetType" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="en">A related resource.</xs:documentation>
         </xs:annotation>
@@ -300,7 +300,7 @@ other related relevant details.</xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
-  <xs:complexType name="AdmsAssetType">
+  <xs:complexType name="AssetType">
     <xs:sequence>
       <xs:element name="landingPage" ref="DocumentType" maxOccurs="unbounded" minOccurs="0">
         <xs:annotation>
@@ -328,9 +328,9 @@ other related relevant details.</xs:documentation>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
-    <xs:attribute name="AdmsAssetRef" type="xs:IDREF">
+    <xs:attribute name="AssetRef" type="xs:IDREF">
       <xs:annotation>
-        <xs:documentation xml:lang="en">Reference to AdmsAsset ID</xs:documentation>
+        <xs:documentation xml:lang="en">Reference to Asset ID</xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>

@@ -260,8 +260,8 @@ This specification uses the following prefixes to shorten the URIs for readibili
                             The main entities are supported by:
                             <br />
                             |
-			      <a href="#ADMSAsset">ADMS Asset</a> |
 			      <a href="#Agent">Agent</a> |
+			      <a href="#Asset">Asset</a> |
 			      <a href="#Document">Document</a> |
 			      <a href="#Expression">Expression</a> |
 			      <a href="#Identifier">Identifier</a> |
@@ -298,8 +298,6 @@ This specification uses the following prefixes to shorten the URIs for readibili
    Main Entities
 </h2>
 The main entities are those that form the core of the Application Profile.
-
-
 
 
 
@@ -523,6 +521,8 @@ given scenario.
         
     </div>
 </section>
+
+
 
 
 
@@ -897,7 +897,7 @@ other related relevant details.
                                 <td>
                                     
                                         
-                                            <a href="#ADMSAsset" data-placement="right">ADMS Asset</a>
+                                            <a href="#Asset" data-placement="right">Asset</a>
                                         
                                     
                                 </td>
@@ -1020,7 +1020,7 @@ other related relevant details.
                         Usage Note
                     </dt>
                     <dd>
-                        This class contains the result of the interoperability assessment performed on the new binding reuirements.
+                        This class contains the result of the interoperability assessment performed on the new binding requirements.
                     </dd>
                 
                 
@@ -1317,318 +1317,6 @@ They are included in the Application Profile because they form the range of prop
 
    
         <section>
-            <h3 id="ADMSAsset">
-                <a href="http://www.w3.org/ns/adms#Asset"
-                   data-toggle="tooltip"
-                   data-content="http://www.w3.org/ns/adms#Asset"
-                   data-placement="right">ADMS Asset</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20AdmsAsset&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    An abstract entity that reflects the intellectual content of the asset and represents those characteristics of the asset that are independent of its physical embodiment. This abstract entity combines the FRBR entities work (a distinct intellectual or artistic creation) and expression (the intellectual or artistic realization of a work).
-                </dd>
-                
-                
-                    <dt>
-                        Usage Note
-                    </dt>
-                    <dd>
-                        An ADMS asset is a Interoperability Solution in IOPA-AP. In LFDS-AP it is any Digital Solution.
-                    </dd>
-                
-                
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                        <dd>
-                            For this entity the following properties are defined: <a href="#ADMSAsset.description">description</a>
-                            , <a href="#ADMSAsset.identifier">identifier</a>
-                            , <a href="#ADMSAsset.landingpage">landing page</a>
-                            , <a href="#ADMSAsset.title">title</a>
-                            , <a href="#ADMSAsset.type">type</a>
-                            .
-                    </dd>
-                
-            </dl>
-        </div>
-        
-            <div class="u-table-overflow">
-                <table class="data-table simple" id="table-mandatory-classes">
-                    <thead>
-                        <tr class="data-table__header">
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                            </th>
-                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
-                                Property
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:14%">
-                                Range
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                                Card
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Definition 
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Usage
-                            </th>
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Codelist
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                                DCAT
-                            </th>
-			    -->
-                        </tr>
-                    </thead>
-                    <tbody class="supertype">
-                        
-                            <tr id="ADMSAsset.description"
-                                typeof="rdfs:Property"
-                                resource="http://purl.org/dc/terms/description"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20description%20in%20ADMS Asset&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23ADMSAsset.description" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://purl.org/dc/terms/description"
-                                           data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/description"
-                                           data-placement="right">
-                                        description</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    1..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    An account of the resource.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				
-                                <td>
-                                    
-                                </td>
-				-->
-                            </tr>
-                        
-                            <tr id="ADMSAsset.identifier"
-                                typeof="rdfs:Property"
-                                resource="http://www.w3.org/ns/adms#identifier"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20identifier%20in%20ADMS Asset&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23ADMSAsset.identifier" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://www.w3.org/ns/adms#identifier"
-                                           data-toggle="tooltip"
-                                           data-content="http://www.w3.org/ns/adms#identifier"
-                                           data-placement="right">
-                                        identifier</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Identifier" data-placement="right">Identifier</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    1
-                                </td>
-                                <td property="rdfs:comment">
-                                    Links a resource to an adms:Identifier class.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				
-                                <td>
-                                    <a href="https://w3c.github.io/dxwg/dcat/#dereferenceable-identifiers">Link</a>
-                                </td>
-				-->
-                            </tr>
-                        
-                            <tr id="ADMSAsset.landingpage"
-                                typeof="rdfs:Property"
-                                resource="http://www.w3.org/ns/dcat#landingPage"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20landing page%20in%20ADMS Asset&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23ADMSAsset.landingpage" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://www.w3.org/ns/dcat#landingPage"
-                                           data-toggle="tooltip"
-                                           data-content="http://www.w3.org/ns/dcat#landingPage"
-                                           data-placement="right">
-                                        landing page</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Document" data-placement="right">Document</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A web page that provides access to the Dataset, its Distributions and/or additional information.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				
-                                <td>
-                                    <a href="https://w3c.github.io/dxwg/dcat/#Property:resource_landing_page">Link</a>
-                                </td>
-				-->
-                            </tr>
-                        
-                            <tr id="ADMSAsset.title"
-                                typeof="rdfs:Property"
-                                resource="http://purl.org/dc/terms/title"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20title%20in%20ADMS Asset&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23ADMSAsset.title" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://purl.org/dc/terms/title"
-                                           data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/title"
-                                           data-placement="right">
-                                        title</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    1..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    	A name given to the resource.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				
-                                <td>
-                                    
-                                </td>
-				-->
-                            </tr>
-                        
-                            <tr id="ADMSAsset.type"
-                                typeof="rdfs:Property"
-                                resource="http://purl.org/dc/terms/type"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20type%20in%20ADMS Asset&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23ADMSAsset.type" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://purl.org/dc/terms/type"
-                                           data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/type"
-                                           data-placement="right">
-                                        type</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Code" data-placement="right">Code</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    1..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    The nature or genre of the resource.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				
-                                <td>
-                                    
-                                </td>
-				-->
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        
-    </div>
-</section>
-
-
-
-
-
-   
-        <section>
             <h3 id="Agent">
                 <a href="http://xmlns.com/foaf/0.1/Agent"
                    data-toggle="tooltip"
@@ -1801,6 +1489,318 @@ They are included in the Application Profile because they form the range of prop
 </section>
 
 
+
+
+
+
+
+   
+        <section>
+            <h3 id="Asset">
+                <a href="http://www.w3.org/ns/adms#Asset"
+                   data-toggle="tooltip"
+                   data-content="http://www.w3.org/ns/adms#Asset"
+                   data-placement="right">Asset</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20Asset&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    An abstract entity that reflects the intellectual content of the asset and represents those characteristics of the asset that are independent of its physical embodiment. This abstract entity combines the FRBR entities work (a distinct intellectual or artistic creation) and expression (the intellectual or artistic realization of a work).
+                </dd>
+                
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                        An ADMS asset is a Interoperability Solution in IOPA-AP. In LFDS-AP it is any Digital Solution.
+                    </dd>
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#Asset.description">description</a>
+                            , <a href="#Asset.identifier">identifier</a>
+                            , <a href="#Asset.landingpage">landing page</a>
+                            , <a href="#Asset.title">title</a>
+                            , <a href="#Asset.type">type</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                            </th>
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:14%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:14%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                                DCAT
+                            </th>
+			    -->
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="Asset.description"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/description"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20description%20in%20Asset&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23Asset.description" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/description"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/description"
+                                           data-placement="right">
+                                        description</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    An account of the resource.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				
+                                <td>
+                                    
+                                </td>
+				-->
+                            </tr>
+                        
+                            <tr id="Asset.identifier"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/adms#identifier"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20identifier%20in%20Asset&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23Asset.identifier" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/adms#identifier"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/adms#identifier"
+                                           data-placement="right">
+                                        identifier</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Identifier" data-placement="right">Identifier</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1
+                                </td>
+                                <td property="rdfs:comment">
+                                    Links a resource to an adms:Identifier class.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				
+                                <td>
+                                    <a href="https://w3c.github.io/dxwg/dcat/#dereferenceable-identifiers">Link</a>
+                                </td>
+				-->
+                            </tr>
+                        
+                            <tr id="Asset.landingpage"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/ns/dcat#landingPage"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20landing page%20in%20Asset&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23Asset.landingpage" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://www.w3.org/ns/dcat#landingPage"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/ns/dcat#landingPage"
+                                           data-placement="right">
+                                        landing page</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Document" data-placement="right">Document</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    A web page that provides access to the Dataset, its Distributions and/or additional information.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				
+                                <td>
+                                    <a href="https://w3c.github.io/dxwg/dcat/#Property:resource_landing_page">Link</a>
+                                </td>
+				-->
+                            </tr>
+                        
+                            <tr id="Asset.title"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/title"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20title%20in%20Asset&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23Asset.title" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/title"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/title"
+                                           data-placement="right">
+                                        title</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Text" data-placement="right">Text</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    	A name given to the resource.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				
+                                <td>
+                                    
+                                </td>
+				-->
+                            </tr>
+                        
+                            <tr id="Asset.type"
+                                typeof="rdfs:Property"
+                                resource="http://purl.org/dc/terms/type"
+                                class="class mandatory">
+                                <td>
+				    <a href="https://github.com/SEMICeu/IOPA/issues/new?title=Issue%20for%20type%20in%20Asset&body=Explain%20your%20issue%20for%20https://semiceu.github.io/IOPA/releases/0.0.1/%23Asset.type" target="_blank" rel="noopener noreferrer" >
+					    <!--                                        <i class="icon">[o]</i> -->
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+                                <td>
+                                        <a href="http://purl.org/dc/terms/type"
+                                           data-toggle="tooltip"
+                                           data-content="http://purl.org/dc/terms/type"
+                                           data-placement="right">
+                                        type</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Code" data-placement="right">Code</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The nature or genre of the resource.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				
+                                <td>
+                                    
+                                </td>
+				-->
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+</section>
 
 
 
@@ -2144,7 +2144,7 @@ They are included in the Application Profile because they form the range of prop
                         Usage Note
                     </dt>
                     <dd>
-                        This class decribes a location.
+                        This class describes a location.
                     </dd>
                 
                 
@@ -2276,7 +2276,7 @@ They are included in the Application Profile because they form the range of prop
                         Usage Note
                     </dt>
                     <dd>
-                        This class represents a stakeholder role which can be fullfilled by an Agent.
+                        This class represents a stakeholder role which can be fulfilled by an Agent.
                     </dd>
                 
                 
@@ -3439,83 +3439,6 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 					
 						
 							<tr>
-								<td><a href="#ADMSAsset">ADMS Asset</a></td>
-								<td><div class="shorten">http://www.w3.org/ns/adms#Asset</div></td>
-								<td>Mandatory</td>
-								<td><a href="#ADMSAsset.description">description </a></td>
-								<td><div class="shorten">http://purl.org/dc/terms/description</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#ADMSAsset">ADMS Asset</a></td>
-								<td><div class="shorten">http://www.w3.org/ns/adms#Asset</div></td>
-								<td>Mandatory</td>
-								<td><a href="#ADMSAsset.identifier">identifier </a></td>
-								<td><div class="shorten">http://www.w3.org/ns/adms#identifier</div></td>
-							</tr>
-						
-					
-						
-					
-						
-							<tr>
-								<td><a href="#ADMSAsset">ADMS Asset</a></td>
-								<td><div class="shorten">http://www.w3.org/ns/adms#Asset</div></td>
-								<td>Mandatory</td>
-								<td><a href="#ADMSAsset.title">title </a></td>
-								<td><div class="shorten">http://purl.org/dc/terms/title</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#ADMSAsset">ADMS Asset</a></td>
-								<td><div class="shorten">http://www.w3.org/ns/adms#Asset</div></td>
-								<td>Mandatory</td>
-								<td><a href="#ADMSAsset.type">type </a></td>
-								<td><div class="shorten">http://purl.org/dc/terms/type</div></td>
-							</tr>
-						
-					
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-					
-						
-					
-						
-					
-						
-							<tr>
-								<td><a href="#ADMSAsset">ADMS Asset</a></td>
-								<td><div class="shorten">http://www.w3.org/ns/adms#Asset</div></td>
-								<td>Optional</td>
-								<td><a href="#ADMSAsset.landingpage">landing page </a></td>
-								<td><div class="shorten">http://www.w3.org/ns/dcat#landingPage</div></td>
-							</tr>
-						
-					
-						
-					
-						
-					
-				
-			</tr>
-		
-				
-					
-						
-							<tr>
 								<td><a href="#Agent">Agent</a></td>
 								<td><div class="shorten">http://xmlns.com/foaf/0.1/Agent</div></td>
 								<td>Mandatory</td>
@@ -3587,6 +3510,83 @@ The properties are indicated as <it>mandatory, recommended, optional</it> and <i
 						
 					
 					
+						
+					
+						
+					
+						
+					
+				
+			</tr>
+		
+				
+					
+						
+							<tr>
+								<td><a href="#Asset">Asset</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#Asset</div></td>
+								<td>Mandatory</td>
+								<td><a href="#Asset.description">description </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/description</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Asset">Asset</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#Asset</div></td>
+								<td>Mandatory</td>
+								<td><a href="#Asset.identifier">identifier </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#identifier</div></td>
+							</tr>
+						
+					
+						
+					
+						
+							<tr>
+								<td><a href="#Asset">Asset</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#Asset</div></td>
+								<td>Mandatory</td>
+								<td><a href="#Asset.title">title </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/title</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#Asset">Asset</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#Asset</div></td>
+								<td>Mandatory</td>
+								<td><a href="#Asset.type">type </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/type</div></td>
+							</tr>
+						
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
+							<tr>
+								<td><a href="#Asset">Asset</a></td>
+								<td><div class="shorten">http://www.w3.org/ns/adms#Asset</div></td>
+								<td>Optional</td>
+								<td><a href="#Asset.landingpage">landing page </a></td>
+								<td><div class="shorten">http://www.w3.org/ns/dcat#landingPage</div></td>
+							</tr>
 						
 					
 						
