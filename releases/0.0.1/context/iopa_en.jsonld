@@ -17,7 +17,7 @@
       "@id": "http://purl.org/dc/terms/type",
       "@type": "@id"
     },
-    "BindingRequirement": "http://data.europa.eu/iopa/BindingRequirement",
+    "BindingRequirement": "http://data.europa.eu/2qy/iopa#BindingRequirement",
     "Code": "http://www.w3.org/2004/02/skos/core#Concept",
     "Document": "http://xmlns.com/foaf/0.1/Document",
     "Expression": "http://purl.org/vocab/frbr/core#Expression",
@@ -127,7 +127,7 @@
     },
     "iopa:affects": {
       "@container": "@set",
-      "@id": "http://data.europa.eu/iopa/affects",
+      "@id": "http://data.europa.eu/2qy/iopa#affects",
       "@type": "@id"
     },
     "judgement": {

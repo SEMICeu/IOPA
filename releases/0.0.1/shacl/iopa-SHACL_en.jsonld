@@ -103,6 +103,266 @@
   "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/",
   "shapes": [
     {
+      "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/19f6de267036c30c67819273f5e8a4eedb68e228",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.ispartof",
+          "sh:description": {
+            "en": "A related resource in which the described resource is physically or logically included."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "is part of"
+          },
+          "sh:path": "http://purl.org/dc/terms/isPartOf"
+        },
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/28d4860d1ad14d789ffc09b841dfc4f9b27a0f4d",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.ispartof",
+          "sh:description": {
+            "en": "A related resource in which the described resource is physically or logically included."
+          },
+          "sh:name": {
+            "en": "is part of"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/isPartOf"
+        },
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/2c910cdeaf75333350c3c9a4ad3abaf73d012113",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.affects",
+          "sh:description": {
+            "en": "The Public Service affected by the Binding Requirement."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "affects"
+          },
+          "sh:path": "http://data.europa.eu/2qy/iopa#affects"
+        },
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/30f9d5dc387c26cd181ecaf79a783dde08b13f17",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.valuedescription",
+          "sh:description": {
+            "en": "Brief description of the Asset."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "value description"
+          },
+          "sh:path": "http://data.europa.eu/2sa/cav#valueDescription"
+        },
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/3253331fcb1cd3f2e87fbaef799d58ece408a646",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.ispartof",
+          "sh:description": {
+            "en": "A related resource in which the described resource is physically or logically included."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "is part of"
+          },
+          "sh:path": "http://purl.org/dc/terms/isPartOf"
+        },
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/49a8d6e4fe7aa6f0addb4ed11d01108c6348d433",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.page",
+          "sh:class": "http://xmlns.com/foaf/0.1/Document",
+          "sh:description": {
+            "en": "A page or document about this thing."
+          },
+          "sh:name": {
+            "en": "page"
+          },
+          "sh:path": "http://xmlns.com/foaf/0.1/page"
+        },
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/53250fc5eb79cc3dc36ee2690f966b44eb3cde1a",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.valuedescription",
+          "sh:description": {
+            "en": "Brief description of the Asset."
+          },
+          "sh:name": {
+            "en": "value description"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data.europa.eu/2sa/cav#valueDescription"
+        },
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/5871eb562969e2a4f395c8424314cc119686e019",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.relation",
+          "sh:description": {
+            "en": "A related resource."
+          },
+          "sh:name": {
+            "en": "relation"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/relation"
+        },
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/5d3b501368b0e6230133103390ac50e7385e214a",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.ispartof",
+          "sh:class": "http://purl.org/vocab/frbr/core#Expression",
+          "sh:description": {
+            "en": "A related resource in which the described resource is physically or logically included."
+          },
+          "sh:name": {
+            "en": "is part of"
+          },
+          "sh:path": "http://purl.org/dc/terms/isPartOf"
+        },
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/61d3ec2b1eb4ee541999f05c4a695db49038c866",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.references",
+          "sh:description": {
+            "en": "A related resource that is referenced, cited, or otherwise pointed to by the described resource."
+          },
+          "sh:name": {
+            "en": "references"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/references"
+        },
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/6439a3ecd827441f83ed8a7001a3cb7e3d6724a8",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.affects",
+          "sh:class": "http://purl.org/vocab/cpsv#PublicService",
+          "sh:description": {
+            "en": "The Public Service affected by the Binding Requirement."
+          },
+          "sh:name": {
+            "en": "affects"
+          },
+          "sh:path": "http://data.europa.eu/2qy/iopa#affects"
+        },
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/837ca7aadb4e9b329c60db5f35ffa3258e9a4dbb",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.references",
+          "sh:class": "http://www.w3.org/ns/dcat#Resource",
+          "sh:description": {
+            "en": "A related resource that is referenced, cited, or otherwise pointed to by the described resource."
+          },
+          "sh:name": {
+            "en": "references"
+          },
+          "sh:path": "http://purl.org/dc/terms/references"
+        },
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/8ea5dbc8f99291b81e441d1a5666a22f1c4d3608",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.valuedescription",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "en": "Brief description of the Asset."
+          },
+          "sh:name": {
+            "en": "value description"
+          },
+          "sh:path": "http://data.europa.eu/2sa/cav#valueDescription"
+        },
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/b2022e46cdd278e120492d597d45342f243b13f7",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.documentedin",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:description": {
+            "en": "A link to any information supporting the value of the asset and any \nother related relevant details."
+          },
+          "sh:name": {
+            "en": "documented in"
+          },
+          "sh:path": "http://data.europa.eu/2sa/cav#documentedIn"
+        },
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/b7aa98e1befa5130659568aa62e7f38575dc17c1",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.relation",
+          "sh:class": "http://www.w3.org/ns/adms#Asset",
+          "sh:description": {
+            "en": "A related resource."
+          },
+          "sh:name": {
+            "en": "relation"
+          },
+          "sh:path": "http://purl.org/dc/terms/relation"
+        },
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/c1605e7eee91579de3df40d771e03a44a59d8ed3",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.valuedescription",
+          "sh:description": {
+            "en": "Brief description of the Asset."
+          },
+          "sh:name": {
+            "en": "value description"
+          },
+          "sh:path": "http://data.europa.eu/2sa/cav#valueDescription",
+          "sh:uniqueLang": "true"
+        },
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/ef2c104f9bc5019523318900356723ac0a8500e2",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.hasparticipation",
+          "sh:description": {
+            "en": "The way how a resource is organized."
+          },
+          "sh:name": {
+            "en": "has participation"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/m8g/hasParticipation"
+        },
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/f04655e0c2d7e379bc84d56c6c34095087b32fe7",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.documentedin",
+          "sh:description": {
+            "en": "A link to any information supporting the value of the asset and any \nother related relevant details."
+          },
+          "sh:name": {
+            "en": "documented in"
+          },
+          "sh:nodeKind": "sh:Literal",
+          "sh:path": "http://data.europa.eu/2sa/cav#documentedIn"
+        },
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/f67a7eac23a6765471f8d867cc7ba256bea49ce3",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.page",
+          "sh:description": {
+            "en": "A page or document about this thing."
+          },
+          "sh:name": {
+            "en": "page"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://xmlns.com/foaf/0.1/page"
+        },
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/fb0f4ce42568457dd68730013f20f7749a22ad39",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.hasparticipation",
+          "sh:class": "http://data.europa.eu/m8g/Participation",
+          "sh:description": {
+            "en": "The way how a resource is organized."
+          },
+          "sh:name": {
+            "en": "has participation"
+          },
+          "sh:path": "http://data.europa.eu/m8g/hasParticipation"
+        },
+        {
+          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/fbd972203ba45fa82f1113fd0b036d84cf8c4069",
+          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.affects",
+          "sh:description": {
+            "en": "The Public Service affected by the Binding Requirement."
+          },
+          "sh:name": {
+            "en": "affects"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.europa.eu/2qy/iopa#affects"
+        }
+      ],
+      "sh:targetClass": "http://data.europa.eu/2qy/iopa#BindingRequirement"
+    },
+    {
       "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#AssessmentShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -110,7 +370,7 @@
         {
           "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#AssessmentShape/5c78cfc0b2f1e3a2139614e0cdf0ace1a05783dd",
           "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#Assessment.assesses",
-          "sh:class": "http://data.europa.eu/iopa/BindingRequirement",
+          "sh:class": "http://data.europa.eu/2qy/iopa#BindingRequirement",
           "sh:description": {
             "en": "The reference to the asset(s) that are the object of the assessment."
           },
@@ -417,266 +677,6 @@
         }
       ],
       "sh:targetClass": "http://data.europa.eu/2sa/cav#Statement"
-    },
-    {
-      "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/19f6de267036c30c67819273f5e8a4eedb68e228",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.ispartof",
-          "sh:description": {
-            "en": "A related resource in which the described resource is physically or logically included."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "is part of"
-          },
-          "sh:path": "http://purl.org/dc/terms/isPartOf"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/28d4860d1ad14d789ffc09b841dfc4f9b27a0f4d",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.ispartof",
-          "sh:description": {
-            "en": "A related resource in which the described resource is physically or logically included."
-          },
-          "sh:name": {
-            "en": "is part of"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://purl.org/dc/terms/isPartOf"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/2c910cdeaf75333350c3c9a4ad3abaf73d012113",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.affects",
-          "sh:description": {
-            "en": "The Public Service affected by the Binding Requirement"
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "affects"
-          },
-          "sh:path": "http://data.europa.eu/iopa/affects"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/30f9d5dc387c26cd181ecaf79a783dde08b13f17",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.valuedescription",
-          "sh:description": {
-            "en": "Brief description of the Asset."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "value description"
-          },
-          "sh:path": "http://data.europa.eu/2sa/cav#valueDescription"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/3253331fcb1cd3f2e87fbaef799d58ece408a646",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.ispartof",
-          "sh:description": {
-            "en": "A related resource in which the described resource is physically or logically included."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "is part of"
-          },
-          "sh:path": "http://purl.org/dc/terms/isPartOf"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/49a8d6e4fe7aa6f0addb4ed11d01108c6348d433",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.page",
-          "sh:class": "http://xmlns.com/foaf/0.1/Document",
-          "sh:description": {
-            "en": "A page or document about this thing."
-          },
-          "sh:name": {
-            "en": "page"
-          },
-          "sh:path": "http://xmlns.com/foaf/0.1/page"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/53250fc5eb79cc3dc36ee2690f966b44eb3cde1a",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.valuedescription",
-          "sh:description": {
-            "en": "Brief description of the Asset."
-          },
-          "sh:name": {
-            "en": "value description"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data.europa.eu/2sa/cav#valueDescription"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/5871eb562969e2a4f395c8424314cc119686e019",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.relation",
-          "sh:description": {
-            "en": "A related resource."
-          },
-          "sh:name": {
-            "en": "relation"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://purl.org/dc/terms/relation"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/5d3b501368b0e6230133103390ac50e7385e214a",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.ispartof",
-          "sh:class": "http://purl.org/vocab/frbr/core#Expression",
-          "sh:description": {
-            "en": "A related resource in which the described resource is physically or logically included."
-          },
-          "sh:name": {
-            "en": "is part of"
-          },
-          "sh:path": "http://purl.org/dc/terms/isPartOf"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/61d3ec2b1eb4ee541999f05c4a695db49038c866",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.references",
-          "sh:description": {
-            "en": "A related resource that is referenced, cited, or otherwise pointed to by the described resource."
-          },
-          "sh:name": {
-            "en": "references"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://purl.org/dc/terms/references"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/6439a3ecd827441f83ed8a7001a3cb7e3d6724a8",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.affects",
-          "sh:class": "http://purl.org/vocab/cpsv#PublicService",
-          "sh:description": {
-            "en": "The Public Service affected by the Binding Requirement"
-          },
-          "sh:name": {
-            "en": "affects"
-          },
-          "sh:path": "http://data.europa.eu/iopa/affects"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/837ca7aadb4e9b329c60db5f35ffa3258e9a4dbb",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.references",
-          "sh:class": "http://www.w3.org/ns/dcat#Resource",
-          "sh:description": {
-            "en": "A related resource that is referenced, cited, or otherwise pointed to by the described resource."
-          },
-          "sh:name": {
-            "en": "references"
-          },
-          "sh:path": "http://purl.org/dc/terms/references"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/8ea5dbc8f99291b81e441d1a5666a22f1c4d3608",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.valuedescription",
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:description": {
-            "en": "Brief description of the Asset."
-          },
-          "sh:name": {
-            "en": "value description"
-          },
-          "sh:path": "http://data.europa.eu/2sa/cav#valueDescription"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/b2022e46cdd278e120492d597d45342f243b13f7",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.documentedin",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
-          "sh:description": {
-            "en": "A link to any information supporting the value of the asset and any \nother related relevant details."
-          },
-          "sh:name": {
-            "en": "documented in"
-          },
-          "sh:path": "http://data.europa.eu/2sa/cav#documentedIn"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/b7aa98e1befa5130659568aa62e7f38575dc17c1",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.relation",
-          "sh:class": "http://www.w3.org/ns/adms#Asset",
-          "sh:description": {
-            "en": "A related resource."
-          },
-          "sh:name": {
-            "en": "relation"
-          },
-          "sh:path": "http://purl.org/dc/terms/relation"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/c1605e7eee91579de3df40d771e03a44a59d8ed3",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.valuedescription",
-          "sh:description": {
-            "en": "Brief description of the Asset."
-          },
-          "sh:name": {
-            "en": "value description"
-          },
-          "sh:path": "http://data.europa.eu/2sa/cav#valueDescription",
-          "sh:uniqueLang": "true"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/ef2c104f9bc5019523318900356723ac0a8500e2",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.hasparticipation",
-          "sh:description": {
-            "en": "The way how a resource is organized."
-          },
-          "sh:name": {
-            "en": "has participation"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.europa.eu/m8g/hasParticipation"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/f04655e0c2d7e379bc84d56c6c34095087b32fe7",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.documentedin",
-          "sh:description": {
-            "en": "A link to any information supporting the value of the asset and any \nother related relevant details."
-          },
-          "sh:name": {
-            "en": "documented in"
-          },
-          "sh:nodeKind": "sh:Literal",
-          "sh:path": "http://data.europa.eu/2sa/cav#documentedIn"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/f67a7eac23a6765471f8d867cc7ba256bea49ce3",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.page",
-          "sh:description": {
-            "en": "A page or document about this thing."
-          },
-          "sh:name": {
-            "en": "page"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://xmlns.com/foaf/0.1/page"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/fb0f4ce42568457dd68730013f20f7749a22ad39",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.hasparticipation",
-          "sh:class": "http://data.europa.eu/m8g/Participation",
-          "sh:description": {
-            "en": "The way how a resource is organized."
-          },
-          "sh:name": {
-            "en": "has participation"
-          },
-          "sh:path": "http://data.europa.eu/m8g/hasParticipation"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/fbd972203ba45fa82f1113fd0b036d84cf8c4069",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.affects",
-          "sh:description": {
-            "en": "The Public Service affected by the Binding Requirement"
-          },
-          "sh:name": {
-            "en": "affects"
-          },
-          "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.europa.eu/iopa/affects"
-        }
-      ],
-      "sh:targetClass": "http://data.europa.eu/iopa/BindingRequirement"
     },
     {
       "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#ParticipationShape",

@@ -7,9 +7,9 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://semiceu.github.io/IOPA/releases/0.0.1/> rdfs:member <https://semiceu.github.io/IOPA/releases/0.0.1/#AssessmentShape>,
+<https://semiceu.github.io/IOPA/releases/0.0.1/> rdfs:member <https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape>,
+    <https://semiceu.github.io/IOPA/releases/0.0.1/#AssessmentShape>,
     <https://semiceu.github.io/IOPA/releases/0.0.1/#StatementShape>,
-    <https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape>,
     <https://semiceu.github.io/IOPA/releases/0.0.1/#ParticipationShape>,
     <https://semiceu.github.io/IOPA/releases/0.0.1/#PublicOrganisationShape>,
     <https://semiceu.github.io/IOPA/releases/0.0.1/#LocationShape>,
@@ -87,7 +87,7 @@
   shacl:targetClass <http://data.europa.eu/2sa/cav#Assessment> .
 
 <https://semiceu.github.io/IOPA/releases/0.0.1/#AssessmentShape/5c78cfc0b2f1e3a2139614e0cdf0ace1a05783dd> rdfs:seeAlso "https://semiceu.github.io/IOPA/releases/0.0.1/#Assessment.assesses";
-  shacl:class <http://data.europa.eu/iopa/BindingRequirement>;
+  shacl:class <http://data.europa.eu/2qy/iopa#BindingRequirement>;
   shacl:description "The reference to the asset(s) that are the object of the assessment."@en;
   shacl:name "assesses"@en;
   shacl:path <http://data.europa.eu/2sa/cav#assesses> .
@@ -298,7 +298,7 @@
     <https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/f67a7eac23a6765471f8d867cc7ba256bea49ce3>,
     <https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/fb0f4ce42568457dd68730013f20f7749a22ad39>,
     <https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/fbd972203ba45fa82f1113fd0b036d84cf8c4069>;
-  shacl:targetClass <http://data.europa.eu/iopa/BindingRequirement> .
+  shacl:targetClass <http://data.europa.eu/2qy/iopa#BindingRequirement> .
 
 <https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/19f6de267036c30c67819273f5e8a4eedb68e228> rdfs:seeAlso "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.ispartof";
   shacl:description "A related resource in which the described resource is physically or logically included."@en;
@@ -313,10 +313,10 @@
   shacl:path dc:isPartOf .
 
 <https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/2c910cdeaf75333350c3c9a4ad3abaf73d012113> rdfs:seeAlso "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.affects";
-  shacl:description "The Public Service affected by the Binding Requirement"@en;
+  shacl:description "The Public Service affected by the Binding Requirement."@en;
   shacl:minCount 1;
   shacl:name "affects"@en;
-  shacl:path <http://data.europa.eu/iopa/affects> .
+  shacl:path <http://data.europa.eu/2qy/iopa#affects> .
 
 <https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/30f9d5dc387c26cd181ecaf79a783dde08b13f17> rdfs:seeAlso "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.valuedescription";
   shacl:description "Brief description of the Asset."@en;
@@ -362,9 +362,9 @@
 
 <https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/6439a3ecd827441f83ed8a7001a3cb7e3d6724a8> rdfs:seeAlso "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.affects";
   shacl:class <http://purl.org/vocab/cpsv#PublicService>;
-  shacl:description "The Public Service affected by the Binding Requirement"@en;
+  shacl:description "The Public Service affected by the Binding Requirement."@en;
   shacl:name "affects"@en;
-  shacl:path <http://data.europa.eu/iopa/affects> .
+  shacl:path <http://data.europa.eu/2qy/iopa#affects> .
 
 <https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/837ca7aadb4e9b329c60db5f35ffa3258e9a4dbb> rdfs:seeAlso "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.references";
   shacl:class dcat:Resource;
@@ -423,10 +423,10 @@ other related relevant details."""@en;
   shacl:path <http://data.europa.eu/m8g/hasParticipation> .
 
 <https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirementShape/fbd972203ba45fa82f1113fd0b036d84cf8c4069> rdfs:seeAlso "https://semiceu.github.io/IOPA/releases/0.0.1/#BindingRequirement.affects";
-  shacl:description "The Public Service affected by the Binding Requirement"@en;
+  shacl:description "The Public Service affected by the Binding Requirement."@en;
   shacl:name "affects"@en;
   shacl:nodeKind shacl:BlankNodeOrIRI;
-  shacl:path <http://data.europa.eu/iopa/affects> .
+  shacl:path <http://data.europa.eu/2qy/iopa#affects> .
 
 <https://semiceu.github.io/IOPA/releases/0.0.1/#CodeShape> a shacl:NodeShape;
   shacl:closed false;

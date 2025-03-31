@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <xs:schema xmlns="https://data.europa.eu/m8g/xml/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://data.europa.eu/m8g/xml/" version="2.0.0" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:cv="https://data.europa.eu/m8g/xml/">
+  <xs:element name="BindingRequirement" type="BindingRequirementType"/>
   <xs:element name="Assessment" type="AssessmentType"/>
   <xs:element name="Statement" type="StatementType"/>
-  <xs:element name="BindingRequirement" type="BindingRequirementType"/>
   <xs:element name="Participation" type="ParticipationType"/>
   <xs:element name="PublicOrganisation" type="PublicOrganisationType"/>
   <xs:element name="Location" type="LocationType"/>
@@ -34,6 +34,56 @@
         <xs:attribute name="conceptSchemeRef" type="xs:IDREF"/>
       </xs:extension>
     </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="BindingRequirementType">
+    <xs:sequence>
+      <xs:element name="hasParticipation" ref="ParticipationType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The way how a resource is organized.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="isPartOf" ref="ExpressionType" maxOccurs="1" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A related resource in which the described resource is physically or logically included.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="references" ref="ResourceType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A related resource that is referenced, cited, or otherwise pointed to by the described resource.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="relation" ref="AssetType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A related resource.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="documentedIn" type="xs:anyURI" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A link to any information supporting the value of the asset and any 
+other related relevant details.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="page" ref="DocumentType" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A page or document about this thing.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="affects" ref="PublicServiceType" maxOccurs="unbounded" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The Public Service affected by the Binding Requirement.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="valueDescription" type="xs:string" maxOccurs="unbounded" minOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Brief description of the Asset.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="BindingRequirementRef" type="xs:IDREF">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Reference to BindingRequirement ID</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
   </xs:complexType>
   <xs:complexType name="AssessmentType">
     <xs:sequence>
@@ -90,56 +140,6 @@
     <xs:attribute name="StatementRef" type="xs:IDREF">
       <xs:annotation>
         <xs:documentation xml:lang="en">Reference to Statement ID</xs:documentation>
-      </xs:annotation>
-    </xs:attribute>
-  </xs:complexType>
-  <xs:complexType name="BindingRequirementType">
-    <xs:sequence>
-      <xs:element name="hasParticipation" ref="ParticipationType" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">The way how a resource is organized.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="isPartOf" ref="ExpressionType" maxOccurs="1" minOccurs="1">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A related resource in which the described resource is physically or logically included.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="references" ref="ResourceType" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A related resource that is referenced, cited, or otherwise pointed to by the described resource.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="relation" ref="AssetType" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A related resource.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="documentedIn" type="xs:anyURI" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A link to any information supporting the value of the asset and any 
-other related relevant details.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="page" ref="DocumentType" maxOccurs="unbounded" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">A page or document about this thing.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="affects" ref="PublicServiceType" maxOccurs="unbounded" minOccurs="1">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">The Public Service affected by the Binding Requirement</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="valueDescription" type="xs:string" maxOccurs="unbounded" minOccurs="1">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Brief description of the Asset.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-    <xs:attribute name="BindingRequirementRef" type="xs:IDREF">
-      <xs:annotation>
-        <xs:documentation xml:lang="en">Reference to BindingRequirement ID</xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:complexType>
