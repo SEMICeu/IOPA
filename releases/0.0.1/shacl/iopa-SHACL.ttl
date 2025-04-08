@@ -82,8 +82,7 @@
     <https://semiceu.github.io/IOPA/releases/0.0.1/#AssessmentShape/ae8ce6b6172f73af3138b326c707e8521923ac3b>,
     <https://semiceu.github.io/IOPA/releases/0.0.1/#AssessmentShape/b2faf6881126d26d68f45976089a43918fe556f6>,
     <https://semiceu.github.io/IOPA/releases/0.0.1/#AssessmentShape/c0070628e43ac62c563764409d0813f46c59737f>,
-    <https://semiceu.github.io/IOPA/releases/0.0.1/#AssessmentShape/ca8d20b8541e80306131c535e919a3e09e9aa511>,
-    <https://semiceu.github.io/IOPA/releases/0.0.1/#AssessmentShape/cf63416b6fb6ea4c4e5a4610c09f897ea54bd205>;
+    <https://semiceu.github.io/IOPA/releases/0.0.1/#AssessmentShape/ca8d20b8541e80306131c535e919a3e09e9aa511>;
   shacl:targetClass <http://data.europa.eu/2sa/cav#Assessment> .
 
 <https://semiceu.github.io/IOPA/releases/0.0.1/#AssessmentShape/5c78cfc0b2f1e3a2139614e0cdf0ace1a05783dd> rdfs:seeAlso "https://semiceu.github.io/IOPA/releases/0.0.1/#Assessment.assesses";
@@ -145,12 +144,6 @@
   shacl:minCount 1;
   shacl:name "results in"@en;
   shacl:path <http://data.europa.eu/2sa/cav#resultsIn> .
-
-<https://semiceu.github.io/IOPA/releases/0.0.1/#AssessmentShape/cf63416b6fb6ea4c4e5a4610c09f897ea54bd205> rdfs:seeAlso "https://semiceu.github.io/IOPA/releases/0.0.1/#Assessment.assesses";
-  shacl:description "The reference to the asset(s) that are the object of the assessment."@en;
-  shacl:maxCount 1;
-  shacl:name "assesses"@en;
-  shacl:path <http://data.europa.eu/2sa/cav#assesses> .
 
 <https://semiceu.github.io/IOPA/releases/0.0.1/#AssetShape> a shacl:NodeShape;
   shacl:closed false;

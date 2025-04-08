@@ -486,18 +486,6 @@
             "en": "results in"
           },
           "sh:path": "http://data.europa.eu/2sa/cav#resultsIn"
-        },
-        {
-          "@id": "https://semiceu.github.io/IOPA/releases/0.0.1/#AssessmentShape/cf63416b6fb6ea4c4e5a4610c09f897ea54bd205",
-          "rdfs:seeAlso": "https://semiceu.github.io/IOPA/releases/0.0.1/#Assessment.assesses",
-          "sh:description": {
-            "en": "The reference to the asset(s) that are the object of the assessment."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "assesses"
-          },
-          "sh:path": "http://data.europa.eu/2sa/cav#assesses"
         }
       ],
       "sh:targetClass": "http://data.europa.eu/2sa/cav#Assessment"

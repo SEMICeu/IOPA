@@ -87,7 +87,7 @@ other related relevant details.</xs:documentation>
   </xs:complexType>
   <xs:complexType name="AssessmentType">
     <xs:sequence>
-      <xs:element name="assesses" ref="BindingRequirementType" maxOccurs="1" minOccurs="1">
+      <xs:element name="assesses" ref="BindingRequirementType" maxOccurs="unbounded" minOccurs="1">
         <xs:annotation>
           <xs:documentation xml:lang="en">The reference to the asset(s) that are the object of the assessment.</xs:documentation>
         </xs:annotation>
